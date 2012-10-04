@@ -6,8 +6,8 @@
 Rationale for a «close to» or «almost equal» operator
 =====================================================
 
-A friend once told me::
-    a solution without a problem is just plain bullshit
+A friend once told me
+**a solution without a problem is just plain bullshit**
 
 So, let's explain why we need an exact matching operator in programming
 language instead of a precise one, and **especially**, what problems it would

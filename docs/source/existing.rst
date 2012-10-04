@@ -17,11 +17,11 @@ Of course datetimes are interval of time elapsed since an arbitrary origin.
 It is just the representations that are differents. 
 
 Times and dates are full of caveats: 
-* leaping hours in CEST;
-* absolute vs local time;
-* Time Zone;
-* calendar time vs usual time (1 day duration, vs an event occuring the next day);
-* and a lot of confusing stuffs ...
+- leaping hours in CEST;
+- absolute vs local time;
+- Time Zone;
+- calendar time vs usual time (1 day duration, vs an event occuring the next day);
+- and a lot of confusing stuffs ...
 
 For dates implemented as seconds elapsed since 1970 in UTC you can figure 
 that the unit of the date is seconds, and the duration is seconds. The only 
