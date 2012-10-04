@@ -21,7 +21,7 @@ would not write::
 but as with any floats you'd write::
 
     epsilon=10**-10
-    if pi - 3.1415926535 < epsilon:
+    if abs(pi - 3.1415926535) < epsilon:
         print("I am sufficiently close enough to pi")
 
 
@@ -59,7 +59,7 @@ What you desire is something like::
 
 
     for suspect in database:
-        interval = suspect - profile 
+        interval = abs(suspect - profile)
         if interval > accetable_variation:
             continue
         # abs is the norm for the complex so why not 
