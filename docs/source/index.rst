@@ -27,6 +27,8 @@ will finally propose an incomplete coded solution.
 .. toctree::
    rationale
    existing
+   known_api
+   limitation
    :maxdepth: 2
 
 

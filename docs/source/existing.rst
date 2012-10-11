@@ -17,6 +17,7 @@ Of course datetimes are interval of time elapsed since an arbitrary origin.
 It is just the representations that are differents. 
 
 Times and dates are full of caveats: 
+
 - leaping hours in CEST;
 - absolute vs local time;
 - Time Zone;
