@@ -30,6 +30,10 @@ difference is the origin.
 Why did we need to abstract datetime so much that we had to introduce the
 datetime interval?
 
+**A datetime interval is just a datetime**
+
+.. image:: ./figure/schema_date.jpg
+
 Because there is a bug in the perception in the brain of developers
 *******************************************************************
 
@@ -55,5 +59,5 @@ Conclusion
 
 Since I think there is a bug in the concepts involved my answer will not be coding. 
 
-It is first explaining why it is a fucking easy problem to solve! 
+It is first understanding what works and how we could shatter this barrier.
 
