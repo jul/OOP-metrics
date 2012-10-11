@@ -41,7 +41,7 @@ will be in zombie range in n hours.
 
 Given that I am lazy person, I only make a nice draw to illustrate the problem:
 
-.. image:: ./figure.zombie.jpg
+.. image:: ./figure/zombie.jpg
 
 And I give the solution. In this case: you change **abs** for any given vector.
 
