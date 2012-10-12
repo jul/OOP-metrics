@@ -59,16 +59,15 @@ What you desire is something like::
 
 
     for suspect in database:
-        interval = abs(suspect - profile)
-        if interval > accetable_variation:
+        distance = abs(suspect - profile)
+        if distance > accetable_variation:
             continue
         # abs is the norm for the complex so why not 
         # try to be consistent?
-        distance = abs(interval)
         print( 
             "%f%% match %r found " % ( 
-                100 * (1.0-( abs(distance)/abs(profile) )),
-                profile
+                100*(1.0-( abs(suspect)/abs(profile) )),
+                suspect
             )
         )
         
