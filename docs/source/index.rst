@@ -29,6 +29,7 @@ will finally propose an incomplete coded solution.
    existing
    known_api
    limitation
+   manhattan
    :maxdepth: 2
 
 

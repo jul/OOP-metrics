@@ -15,7 +15,7 @@ The big question is: **is the bug located in the composition of the vectors
 or located in the norm?**.
 
 We have a very fast answer::
-    ### let's compose the speed and see
+    >>> ### let's compose the speed and see
     >>> bullet.speed= .5 # expressed in ratio of c
     >>> spaceship.speed = .9 # expressed in ratio of c
     >>> spaceship.speed + bullet.speed
