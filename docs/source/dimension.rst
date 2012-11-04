@@ -1,5 +1,5 @@
 ===============================
-All your bases are beling to us
+All your bases are belong to us
 ===============================
 
 A base is a set on uncorrelated dimensions. 
@@ -116,16 +116,18 @@ you:
 - you give every results of the **Vti** that are the closest to **Vq** given a confidence margin. 
 
 .. note:: **dot product on words**:
-    let dot be zero
-    for each words present in Vti and Vq: 
-        multiply frequence of Wti and Vq
-        add it to dot
-    return dot
+   pseudo code::
+        let dot be zero
+        for each words present in Vti and Vq: 
+           multiply frequence of Wti and Vq
+           add it to dot
+        return dot
 
-    now, since Vti and Vq are normalized you have
-    a scalar *Confidence* called **c** which varies
-    from 0 to 1 which says how much *Vti* is pointing
-    in direction *Vq*.
+
+Now, since Vti and Vq are normalized you have
+a scalar *Confidence* called **c** which varies
+from 0 to 1 which says how much *Vti* is pointing
+in direction *Vq*.
 
 The problem with distance and measures, is that you can
 use a lot of other metrics. For instance you can
