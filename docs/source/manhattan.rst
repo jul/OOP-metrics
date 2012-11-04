@@ -1,5 +1,5 @@
 =================================================
-Some interesting properties og Manhattan geometry
+Some interesting properties of Manhattan geometry
 =================================================
 
 Manhattan geometry, which is a discrete geometry whose axioms are: 
@@ -62,19 +62,21 @@ It is trivial to demonstrate that
 thus
 
 .. note:: A(0,r,d)=r.2.(1-1/d) 
-   **A(0,r,d=>inf)=2xr**
+
+    **A(0,r,d=>inf)=2xr**
 
 Nth dimensional probem of the volume
 ====================================
 
 This one is boring easy so let's just state the results: 
-.. note:: given n dimension, the V of dimemsion n is
+
+.. note:: given n dimension, the volume V of dimemsion n is
    
-   Vn(0,r,d=>inf)=2^(n-1) . r
+   **Vn(0,r,d=>inf)=2^(n-1) . r**
 
    Plus if the Area of dimension n is denoted A
 
-   An(0,r,d) > Vn(0nr,d) whatever the dimension is
+   *An(0,r,d) > Vn(0nr,d) whatever the dimension is*
 
 So in three dimensions for instance, the surface of the sphere will have
 a measure in measure^n inferior to its surface in measure^(n-1), thus the ratio
@@ -83,6 +85,24 @@ the reason to be of large mass is diminishing this ratio so that you radiate  le
 
 Since computers are Manhattan driven geometry, thus some problem might give 
 false results. 
+
+Conclusion
+==========
+
+Geometry are abstract yet intuitive constructions. What may looks like an
+intellectual wanking is interesting: Manhattan geometry is a geometry fitted
+for problems where distance between to points can be expressed as quantum
+of differences. Plus since it is pretty intuitive, it is easier to handle 
+than nth dimension generalized euclidian geometry. 
+
+Plus since is does not rely on real numbers but on on natural integers, 
+measures are peculiarly well suited for computers. Since we have order relations
+it permits what we love to do with computers: 
+
+- comparing;
+- sorting.
+
+
 
 
 
