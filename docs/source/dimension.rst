@@ -118,22 +118,43 @@ you:
 .. note:: **dot product on words**:
    pseudo code::
         let dot be zero
-        for each words present in Vti and Vq: 
-           multiply frequence of Wti and Vq
+        let normV be zero
+        let normQ be zero
+        for each wordsi frequency Fv,Fq present in Vti and Vq: 
+           multiply frequence of Fv and Fq
            add it to dot
-        return dot
+        normV is absolute value of distance from 0 of Vti
+        normQ is absolute value of distance from 0 of Vq
+
+        return dot / (normV * normQ)
 
 
 Now, since Vti and Vq are normalized you have
 a scalar *Confidence* called **c** which varies
 from 0 to 1 which says how much *Vti* is pointing
-in direction *Vq*.
+in direction *Vq*. It is called a cosine similarity. 
+
+The dot product of Vq and Vti is in fact a projection of Vti on Vq.
+If the text Vt triggers the keyword Vq then it means the vector
+of the text (Vt) points in the same direction as Vq.
+
+So Vq dot Vt is how much times Vt «speaks» of Vq. By dividing by the 
+norm of Vt we make an homothetia that answers another question: if we Vq and Vt
+were the same size, what is the ratio of **Vt** represents compared to **Vq**.
+
+The magic in textual indexation is a 60 words can be as relevant as 6000 words
+text. A definition of  *serendipity*  (60 words) is has meaningfull has a thesis
+on serendipity. But a text of 10 000 words long having once the
+keyword vector triggered is useless since S=-K.ln(Omega) you lose informations.
+
+
 
 The problem with distance and measures, is that you can
 use a lot of other metrics. For instance you can
 weight the words with its presence in anything that 
 semantically denotes a stress (title, emphasis, URL).
 
+The norm is usually calculated with L2 = sqrt(Sum( (Xi)^2)). But is flawed.
 
 
 

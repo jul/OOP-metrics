@@ -28,10 +28,12 @@ will finally propose an incomplete coded solution.
    rationale
    existing
    known_api
+   object
    limitation
    symmetric
    dimension
    manhattan
+   definitions
    :maxdepth: 2
 
 
